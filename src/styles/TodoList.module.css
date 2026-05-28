@@ -1,0 +1,13 @@
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+  background-color: var(--card-bg);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+}

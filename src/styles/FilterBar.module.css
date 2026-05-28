@@ -1,0 +1,52 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.filters {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.filterBtn {
+  background: transparent;
+  padding: 0.25rem 0.5rem;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+}
+
+.filterBtn:hover {
+  color: var(--text-main);
+}
+
+.filterBtn.active {
+  border-color: rgba(37, 99, 235, 0.2);
+  color: var(--primary);
+  background-color: rgba(37, 99, 235, 0.05);
+}
+
+.clearBtn {
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.clearBtn:hover {
+  color: var(--danger);
+  text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+  .bar {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
